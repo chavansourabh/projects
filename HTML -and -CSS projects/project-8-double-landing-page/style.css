@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Niconne&family=Poppins:wght@400;700&family=Water+Brush&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: popins;
+}
+
+h1 {
+  font-size: 100px;
+  /* backdrop-filter: brightness(.6); */
+}
+.apple {
+  color: aliceblue;
+}
+.samsung {
+  color: #77947f;
+}
+
+.left .btn {
+  background-color: aliceblue;
+  color: #5c6960;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.right .btn {
+  background-color: #77947f;
+  color: aliceblue;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.left .btn:hover {
+  background-color: #ecffb0;
+}
+.right .btn:hover {
+  background-color: #7692ff;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: #9eb1a3;
+  background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433");
+  background-size: cover;
+  background-position: center;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: aliceblue;
+  background-image: url("https://images.samsung.com/is/image/samsung/p6pim/in/2202/gallery/in-galaxy-s22-ultra-s908-413016-sm-s908ezwginu-530969260?$650_519_PNG$");
+  background-size: cover;
+  background-position: -160px 100px;
+}
+
+.active-left .left {
+  width: 75%;
+}
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+.active-right .right {
+  width: 75%;
+  background-position: -150px 80px;
+}
+
+.left,
+.right {
+  transition: 2s ease-in-out;
+}

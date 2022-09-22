@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Niconne&family=Poppins:wght@400;700&family=Water+Brush&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.password-container {
+  background-color: #bcb6ff;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+  margin: 15px;
+  }
+
+  .password-container h2{
+    font-family: poppins;
+    color: #633b8a;
+    word-spacing: 2px;
+  }
+
+.input-container {
+  border: 2px solid #745296;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: rgb(142, 88, 204);
+}
+
+ .input::placeholder{
+  letter-spacing: 0;
+  color: rgb(149, 112, 192);
+ }
+
+ .fa-copy {
+  cursor: pointer;
+  opacity: 0.3;
+  color: #745296;
+ }
+
+ .fa-copy:hover{
+  opacity: 0.7;
+ }
+
+
+ .btn{
+  background-color:#6457A6 ;
+  border: 1px solid transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5rem;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1.1px;
+ }
+
+
+ .btn:hover{
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.7);
+ }
+
+ .btn:active{
+  transform: scale(0.95);
+ }
+
+ .alert-container{
+     position: fixed;
+  width: 300px;
+  height: 50px;
+  background-color: lightgreen;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#3F612D ;
+  font-size: 20px;
+  transition: .4s;
+ }
+
+ .active.alert-container{
+   right: -300px;
+ }

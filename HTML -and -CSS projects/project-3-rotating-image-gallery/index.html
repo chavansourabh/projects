@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rotating Image Gallery</title>
+ <link rel="stylesheet" href="style.css">
+
+ <link rel="icon" href="./-gallery_86860.ico">
+</head>
+<body>
+ <div class="image-container">
+  <span style="--i: 1">
+   <img src="https://picsum.photos/seed/picsum/300/200" alt="">
+  </span>
+  <span style="--i: 2">
+   <img src="https://picsum.photos/seed/{2}picsum/300/200" alt="">
+  </span>
+  <span style="--i: 3">
+   <img src="https://picsum.photos/seed/{3}picsum/300/200" alt="">
+  </span>
+  <span style="--i: 4">
+   <img src="https://picsum.photos/seed/{5}picsum/300/200" alt="">
+  </span>
+  <span style="--i: 5">
+   <img src="https://picsum.photos/seed/{22}picsum/300/200" alt="">
+  </span>
+  <span style="--i: 6">
+   <img src="https://picsum.photos/seed/{15}picsum/300/200" alt="">
+  </span>
+  <span style="--i: 7">
+   <img src="https://picsum.photos/seed/picsum{2}/300/200" alt="">
+  </span>
+  <span style="--i: 8">
+   <img src="https://picsum.photos/seed/picsum{1522}/300/200" alt="">
+  </span>
+ </div>
+
+ <div class="btn-container">
+  <button class="btn" id="prev">prev</button>
+  <button class="btn" id="next">next</button>
+ </div>
+
+ <script src="./index.js"></script>
+</body>
+</html> 

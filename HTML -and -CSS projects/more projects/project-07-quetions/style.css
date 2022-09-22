@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&family=Niconne&family=Poppins:wght@400;700&family=Water+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), -2px -2px 10px rgb(255, 255, 255);
+}
+.title h2 {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  word-spacing: 3px;
+  color: #c59d5f;
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+}
+.question {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
+    0 -5px 15px rgba(255, 255, 255, 0.918);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: 0.25rem;
+  color: hsl(209, 61%, 16%);
+  font-family: 'poppins';
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #c59d5f;
+  transition: all 0.3 linear;
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+  margin-bottom: 0;
+  color: hsl(210, 22%, 49%);
+  font-family: "poppins";
+}
+
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
